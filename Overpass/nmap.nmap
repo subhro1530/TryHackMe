@@ -1,0 +1,57 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-07-10 03:38 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 03:38
+Completed NSE at 03:38, 0.00s elapsed
+Initiating NSE at 03:38
+Completed NSE at 03:38, 0.00s elapsed
+Initiating NSE at 03:38
+Completed NSE at 03:38, 0.00s elapsed
+Initiating Ping Scan at 03:38
+Scanning 10.10.35.187 [2 ports]
+Completed Ping Scan at 03:38, 0.23s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 03:38
+Completed Parallel DNS resolution of 1 host. at 03:38, 0.19s elapsed
+Initiating Connect Scan at 03:38
+Scanning 10.10.35.187 [1000 ports]
+Discovered open port 22/tcp on 10.10.35.187
+Discovered open port 80/tcp on 10.10.35.187
+Increasing send delay for 10.10.35.187 from 0 to 5 due to 57 out of 189 dropped probes since last increase.
+Increasing send delay for 10.10.35.187 from 5 to 10 due to 11 out of 19 dropped probes since last increase.
+Completed Connect Scan at 03:39, 42.86s elapsed (1000 total ports)
+Initiating Service scan at 03:39
+Scanning 2 services on 10.10.35.187
+Completed Service scan at 03:39, 13.47s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.35.187.
+Initiating NSE at 03:39
+Completed NSE at 03:39, 7.05s elapsed
+Initiating NSE at 03:39
+Completed NSE at 03:39, 0.97s elapsed
+Initiating NSE at 03:39
+Completed NSE at 03:39, 0.00s elapsed
+Nmap scan report for 10.10.35.187
+Host is up (0.22s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 37:96:85:98:d1:00:9c:14:63:d9:b0:34:75:b1:f9:57 (RSA)
+|   256 53:75:fa:c0:65:da:dd:b1:e8:dd:40:b8:f6:82:39:24 (ECDSA)
+|_  256 1c:4a:da:1f:36:54:6d:a6:c6:17:00:27:2e:67:75:9c (ED25519)
+80/tcp open  http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Overpass
+|_http-favicon: Unknown favicon MD5: 0D4315E5A0B066CEFD5B216C8362564B
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 03:39
+Completed NSE at 03:39, 0.00s elapsed
+Initiating NSE at 03:39
+Completed NSE at 03:39, 0.00s elapsed
+Initiating NSE at 03:39
+Completed NSE at 03:39, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 65.55 seconds

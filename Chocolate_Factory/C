@@ -1,0 +1,75 @@
+┌──(subhro1530㉿subhro)-[~]
+└─$ nmap -T5 -p0-1023 -vv 10.10.246.57 -oA nmap
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-06-25 01:21 EDT
+Initiating Ping Scan at 01:21
+Scanning 10.10.246.57 [2 ports]
+Completed Ping Scan at 01:21, 1.52s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 01:21
+Completed Parallel DNS resolution of 1 host. at 01:21, 0.01s elapsed
+Initiating Connect Scan at 01:21
+Scanning 10.10.246.57 [1024 ports]
+Discovered open port 22/tcp on 10.10.246.57
+Discovered open port 113/tcp on 10.10.246.57
+Discovered open port 80/tcp on 10.10.246.57
+Discovered open port 111/tcp on 10.10.246.57
+Discovered open port 21/tcp on 10.10.246.57
+Discovered open port 110/tcp on 10.10.246.57
+Warning: 10.10.246.57 giving up on port because retransmission cap hit (2).
+Increasing send delay for 10.10.246.57 from 0 to 5 due to 17 out of 42 dropped probes since last increase.
+Discovered open port 100/tcp on 10.10.246.57
+Discovered open port 108/tcp on 10.10.246.57
+Discovered open port 115/tcp on 10.10.246.57
+Discovered open port 101/tcp on 10.10.246.57
+Discovered open port 120/tcp on 10.10.246.57
+Discovered open port 105/tcp on 10.10.246.57
+Discovered open port 123/tcp on 10.10.246.57
+Discovered open port 124/tcp on 10.10.246.57
+Discovered open port 107/tcp on 10.10.246.57
+Discovered open port 109/tcp on 10.10.246.57
+Discovered open port 102/tcp on 10.10.246.57
+Discovered open port 103/tcp on 10.10.246.57
+Discovered open port 116/tcp on 10.10.246.57
+Discovered open port 121/tcp on 10.10.246.57
+Discovered open port 114/tcp on 10.10.246.57
+Discovered open port 106/tcp on 10.10.246.57
+Discovered open port 119/tcp on 10.10.246.57
+Discovered open port 117/tcp on 10.10.246.57
+Discovered open port 112/tcp on 10.10.246.57
+Discovered open port 118/tcp on 10.10.246.57
+Discovered open port 122/tcp on 10.10.246.57
+Completed Connect Scan at 01:21, 25.23s elapsed (1024 total ports)
+Nmap scan report for 10.10.246.57
+Host is up, received conn-refused (0.21s latency).
+Scanned at 2023-06-25 01:21:15 EDT for 25s
+Not shown: 918 closed tcp ports (conn-refused), 79 filtered tcp ports (no-response)
+PORT    STATE SERVICE    REASON
+21/tcp  open  ftp        syn-ack
+22/tcp  open  ssh        syn-ack
+80/tcp  open  http       syn-ack
+100/tcp open  newacct    syn-ack
+101/tcp open  hostname   syn-ack
+102/tcp open  iso-tsap   syn-ack
+103/tcp open  gppitnp    syn-ack
+105/tcp open  csnet-ns   syn-ack
+106/tcp open  pop3pw     syn-ack
+107/tcp open  rtelnet    syn-ack
+108/tcp open  snagas     syn-ack
+109/tcp open  pop2       syn-ack
+110/tcp open  pop3       syn-ack
+111/tcp open  rpcbind    syn-ack
+112/tcp open  mcidas     syn-ack
+113/tcp open  ident      syn-ack
+114/tcp open  audionews  syn-ack
+115/tcp open  sftp       syn-ack
+116/tcp open  ansanotify syn-ack
+117/tcp open  uucp-path  syn-ack
+118/tcp open  sqlserv    syn-ack
+119/tcp open  nntp       syn-ack
+120/tcp open  cfdptkt    syn-ack
+121/tcp open  erpc       syn-ack
+122/tcp open  smakynet   syn-ack
+123/tcp open  ntp        syn-ack
+124/tcp open  ansatrader syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 26.81 seconds

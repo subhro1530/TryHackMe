@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Fri Jun 30 11:11:04 2023 as: nmap -T5 -p21,22,80 -A -oA nmap_deep 10.10.107.176
+Host: 10.10.107.176 ()	Status: Up
+Host: 10.10.107.176 ()	Ports: 21/filtered/tcp//ftp///, 22/filtered/tcp//ssh///, 80/filtered/tcp//http///
+# Nmap done at Fri Jun 30 11:11:08 2023 -- 1 IP address (1 host up) scanned in 3.75 seconds

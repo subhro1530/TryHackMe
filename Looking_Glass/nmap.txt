@@ -1,0 +1,8 @@
+# Nmap 7.92 scan initiated Tue May 23 11:36:15 2023 as: nmap -sV -sC -Pn -oN nmap.txt 10.10.226.48
+Nmap scan report for 10.10.226.48
+Host is up.
+All 1000 scanned ports on 10.10.226.48 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May 23 11:39:41 2023 -- 1 IP address (1 host up) scanned in 206.31 seconds

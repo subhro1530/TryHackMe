@@ -1,0 +1,68 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-07-22 15:07 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:07
+Completed NSE at 15:07, 0.00s elapsed
+Initiating NSE at 15:07
+Completed NSE at 15:07, 0.00s elapsed
+Initiating NSE at 15:07
+Completed NSE at 15:07, 0.00s elapsed
+Initiating Ping Scan at 15:07
+Scanning 10.10.77.119 [2 ports]
+Completed Ping Scan at 15:07, 0.26s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:07
+Completed Parallel DNS resolution of 1 host. at 15:07, 0.20s elapsed
+Initiating Connect Scan at 15:07
+Scanning 10.10.77.119 [1000 ports]
+Discovered open port 3389/tcp on 10.10.77.119
+Discovered open port 80/tcp on 10.10.77.119
+Completed Connect Scan at 15:08, 20.63s elapsed (1000 total ports)
+Initiating Service scan at 15:08
+Scanning 2 services on 10.10.77.119
+Completed Service scan at 15:08, 17.28s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.77.119.
+Initiating NSE at 15:08
+Completed NSE at 15:09, 73.85s elapsed
+Initiating NSE at 15:09
+Completed NSE at 15:09, 6.61s elapsed
+Initiating NSE at 15:09
+Completed NSE at 15:09, 0.00s elapsed
+Nmap scan report for 10.10.77.119
+Host is up (0.26s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2023-07-22T19:09:45+00:00; +2s from scanner time.
+| ssl-cert: Subject: commonName=WIN-LU09299160F
+| Issuer: commonName=WIN-LU09299160F
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-07-21T19:07:09
+| Not valid after:  2024-01-20T19:07:09
+| MD5:   f340 376c 5b5e 0404 2334 df9d f12f 52ae
+|_SHA-1: 8c1d 96ad d569 1957 5c94 45a9 281f e70b 395d 098f
+| rdp-ntlm-info: 
+|   Target_Name: WIN-LU09299160F
+|   NetBIOS_Domain_Name: WIN-LU09299160F
+|   NetBIOS_Computer_Name: WIN-LU09299160F
+|   DNS_Domain_Name: WIN-LU09299160F
+|   DNS_Computer_Name: WIN-LU09299160F
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-07-22T19:08:32+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1s, deviation: 0s, median: 1s
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:09
+Completed NSE at 15:09, 0.00s elapsed
+Initiating NSE at 15:09
+Completed NSE at 15:09, 0.00s elapsed
+Initiating NSE at 15:09
+Completed NSE at 15:09, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 120.02 seconds

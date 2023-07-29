@@ -1,0 +1,15 @@
+# Nmap 7.92 scan initiated Mon May 29 12:31:41 2023 as: nmap -oN nmap.txt -oC -sC 10.10.167.167
+Nmap scan report for 10.10.167.167
+Host is up (0.23s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh-hostkey: 
+|   1024 57:20:82:3c:62:aa:8f:42:23:c0:b8:93:99:6f:49:9c (DSA)
+|   2048 4c:40:db:32:64:0d:11:0c:ef:4f:b8:5b:73:9b:c7:6b (RSA)
+|   256 f7:6f:78:d5:83:52:a6:4d:da:21:3c:55:47:b7:2d:6d (ECDSA)
+|_  256 a5:b4:f0:84:b6:a7:8d:eb:0a:9d:3e:74:37:33:65:16 (ED25519)
+80/tcp open  http
+|_http-title: 0day
+
+# Nmap done at Mon May 29 12:33:16 2023 -- 1 IP address (1 host up) scanned in 95.74 seconds

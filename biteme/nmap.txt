@@ -1,0 +1,64 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-07-03 13:05 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 13:05
+Completed NSE at 13:05, 0.00s elapsed
+Initiating NSE at 13:05
+Completed NSE at 13:05, 0.00s elapsed
+Initiating NSE at 13:05
+Completed NSE at 13:05, 0.00s elapsed
+Initiating Ping Scan at 13:05
+Scanning 10.10.179.109 [2 ports]
+Completed Ping Scan at 13:05, 0.27s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 13:05
+Completed Parallel DNS resolution of 1 host. at 13:05, 0.19s elapsed
+Initiating Connect Scan at 13:05
+Scanning 10.10.179.109 [1000 ports]
+Discovered open port 80/tcp on 10.10.179.109
+Discovered open port 22/tcp on 10.10.179.109
+Completed Connect Scan at 13:06, 35.86s elapsed (1000 total ports)
+Initiating Service scan at 13:06
+Scanning 2 services on 10.10.179.109
+Completed Service scan at 13:06, 6.49s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.179.109.
+Initiating NSE at 13:06
+Completed NSE at 13:06, 10.80s elapsed
+Initiating NSE at 13:06
+Completed NSE at 13:06, 0.84s elapsed
+Initiating NSE at 13:06
+Completed NSE at 13:06, 0.00s elapsed
+Nmap scan report for 10.10.179.109
+Host is up (0.24s latency).
+Not shown: 989 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE        VERSION
+20/tcp    filtered ftp-data
+22/tcp    open     ssh            OpenSSH 7.6p1 Ubuntu 4ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 89:ec:67:1a:85:87:c6:f6:64:ad:a7:d1:9e:3a:11:94 (RSA)
+|   256 7f:6b:3c:f8:21:50:d9:8b:52:04:34:a5:4d:03:3a:26 (ECDSA)
+|_  256 c4:5b:e5:26:94:06:ee:76:21:75:27:bc:cd:ba:af:cc (ED25519)
+80/tcp    open     http           Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+163/tcp   filtered cmip-man
+1091/tcp  filtered ff-sm
+1165/tcp  filtered qsm-gui
+1169/tcp  filtered tripwire
+2003/tcp  filtered finger
+4321/tcp  filtered rwhois
+6389/tcp  filtered clariion-evr01
+49175/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 13:06
+Completed NSE at 13:06, 0.00s elapsed
+Initiating NSE at 13:06
+Completed NSE at 13:06, 0.00s elapsed
+Initiating NSE at 13:06
+Completed NSE at 13:06, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 55.24 seconds

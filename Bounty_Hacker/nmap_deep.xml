@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Fri Jun 30 11:11:04 2023 as: nmap -T5 -p21,22,80 -A -oA nmap_deep 10.10.107.176 -->
+<nmaprun scanner="nmap" args="nmap -T5 -p21,22,80 -A -oA nmap_deep 10.10.107.176" start="1688137864" startstr="Fri Jun 30 11:11:04 2023" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="21-22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.107.176" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1688137866" endtime="1688137868"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.107.176" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="228557" rttvar="228557" to="300000"/>
+</host>
+<runstats><finished time="1688137868" timestr="Fri Jun 30 11:11:08 2023" summary="Nmap done at Fri Jun 30 11:11:08 2023; 1 IP address (1 host up) scanned in 3.75 seconds" elapsed="3.75" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

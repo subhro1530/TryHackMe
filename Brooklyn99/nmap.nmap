@@ -1,0 +1,73 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-07-10 15:30 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:30
+Completed NSE at 15:30, 0.00s elapsed
+Initiating NSE at 15:30
+Completed NSE at 15:30, 0.00s elapsed
+Initiating NSE at 15:30
+Completed NSE at 15:30, 0.00s elapsed
+Initiating Ping Scan at 15:30
+Scanning 10.10.244.34 [2 ports]
+Completed Ping Scan at 15:30, 1.58s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:30
+Completed Parallel DNS resolution of 1 host. at 15:30, 0.32s elapsed
+Initiating Connect Scan at 15:30
+Scanning 10.10.244.34 [1000 ports]
+Discovered open port 80/tcp on 10.10.244.34
+Discovered open port 21/tcp on 10.10.244.34
+Discovered open port 22/tcp on 10.10.244.34
+Completed Connect Scan at 15:30, 20.79s elapsed (1000 total ports)
+Initiating Service scan at 15:30
+Scanning 3 services on 10.10.244.34
+Completed Service scan at 15:30, 6.46s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.244.34.
+Initiating NSE at 15:30
+NSE: [ftp-bounce] PORT response: 500 Illegal PORT command.
+Completed NSE at 15:30, 6.18s elapsed
+Initiating NSE at 15:30
+Completed NSE at 15:30, 1.46s elapsed
+Initiating NSE at 15:30
+Completed NSE at 15:30, 0.00s elapsed
+Nmap scan report for 10.10.244.34
+Host is up (0.21s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.17.28.202
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 0        0             119 May 17  2020 note_to_jake.txt
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 16:7f:2f:fe:0f:ba:98:77:7d:6d:3e:b6:25:72:c6:a3 (RSA)
+|   256 2e:3b:61:59:4b:c4:29:b5:e8:58:39:6f:6f:e9:9b:ee (ECDSA)
+|_  256 ab:16:2e:79:20:3c:9b:0a:01:9c:8c:44:26:01:58:04 (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:30
+Completed NSE at 15:30, 0.00s elapsed
+Initiating NSE at 15:30
+Completed NSE at 15:30, 0.00s elapsed
+Initiating NSE at 15:30
+Completed NSE at 15:30, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 37.54 seconds

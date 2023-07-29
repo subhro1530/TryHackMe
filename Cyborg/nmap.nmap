@@ -1,0 +1,57 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-07-12 14:04 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:04
+Completed NSE at 14:04, 0.00s elapsed
+Initiating NSE at 14:04
+Completed NSE at 14:04, 0.00s elapsed
+Initiating NSE at 14:04
+Completed NSE at 14:04, 0.00s elapsed
+Initiating Ping Scan at 14:04
+Scanning 10.10.27.141 [2 ports]
+Completed Ping Scan at 14:04, 0.30s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:04
+Completed Parallel DNS resolution of 1 host. at 14:04, 0.16s elapsed
+Initiating Connect Scan at 14:04
+Scanning 10.10.27.141 [1000 ports]
+Discovered open port 80/tcp on 10.10.27.141
+Discovered open port 22/tcp on 10.10.27.141
+Increasing send delay for 10.10.27.141 from 0 to 5 due to max_successful_tryno increase to 4
+Increasing send delay for 10.10.27.141 from 5 to 10 due to max_successful_tryno increase to 5
+Completed Connect Scan at 14:04, 30.40s elapsed (1000 total ports)
+Initiating Service scan at 14:04
+Scanning 2 services on 10.10.27.141
+Completed Service scan at 14:05, 6.64s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.27.141.
+Initiating NSE at 14:05
+Completed NSE at 14:05, 8.49s elapsed
+Initiating NSE at 14:05
+Completed NSE at 14:05, 1.18s elapsed
+Initiating NSE at 14:05
+Completed NSE at 14:05, 0.00s elapsed
+Nmap scan report for 10.10.27.141
+Host is up (0.21s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 db:b2:70:f3:07:ac:32:00:3f:81:b8:d0:3a:89:f3:65 (RSA)
+|   256 68:e6:85:2f:69:65:5b:e7:c6:31:2c:8e:41:67:d7:ba (ECDSA)
+|_  256 56:2c:79:92:ca:23:c3:91:49:35:fa:dd:69:7c:ca:ab (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:05
+Completed NSE at 14:05, 0.00s elapsed
+Initiating NSE at 14:05
+Completed NSE at 14:05, 0.00s elapsed
+Initiating NSE at 14:05
+Completed NSE at 14:05, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 48.01 seconds
