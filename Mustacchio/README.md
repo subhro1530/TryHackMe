@@ -1,0 +1,73 @@
+#   Tryhackme - Mustacchio
+
+##  export IP=10.10.185.52
+
+##  Walkthrough by
+```
+Shaswata Saha
+29-07-23
+09:59AM
+```
+
+##  Steps:
+1.  Nmap:
+```bash
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-07-29 00:30 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 00:30
+Completed NSE at 00:30, 0.00s elapsed
+Initiating NSE at 00:30
+Completed NSE at 00:30, 0.00s elapsed
+Initiating NSE at 00:30
+Completed NSE at 00:30, 0.00s elapsed
+Initiating Ping Scan at 00:30
+Scanning 10.10.185.52 [2 ports]
+Completed Ping Scan at 00:30, 0.52s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 00:30
+Completed Parallel DNS resolution of 1 host. at 00:30, 0.15s elapsed
+Initiating Connect Scan at 00:30
+Scanning 10.10.185.52 [1000 ports]
+Discovered open port 22/tcp on 10.10.185.52
+Discovered open port 80/tcp on 10.10.185.52
+Completed Connect Scan at 00:30, 35.02s elapsed (1000 total ports)
+Initiating Service scan at 00:30
+Scanning 2 services on 10.10.185.52
+Completed Service scan at 00:31, 7.05s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.185.52.
+Initiating NSE at 00:31
+Completed NSE at 00:31, 8.12s elapsed
+Initiating NSE at 00:31
+Completed NSE at 00:31, 1.03s elapsed
+Initiating NSE at 00:31
+Completed NSE at 00:31, 0.00s elapsed
+Nmap scan report for 10.10.185.52
+Host is up (0.64s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 58:1b:0c:0f:fa:cf:05:be:4c:c0:7a:f1:f1:88:61:1c (RSA)
+|   256 3c:fc:e8:a3:7e:03:9a:30:2c:77:e0:0a:1c:e4:52:e6 (ECDSA)
+|_  256 9d:59:c6:c7:79:c5:54:c4:1d:aa:e4:d1:84:71:01:92 (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Mustacchio | Home
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 00:31
+Completed NSE at 00:31, 0.00s elapsed
+Initiating NSE at 00:31
+Completed NSE at 00:31, 0.00s elapsed
+Initiating NSE at 00:31
+Completed NSE at 00:31, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 52.83 seconds
+
+```

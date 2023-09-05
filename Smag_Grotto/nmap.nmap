@@ -1,0 +1,59 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-08-30 10:03 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 10:03
+Completed NSE at 10:03, 0.00s elapsed
+Initiating NSE at 10:03
+Completed NSE at 10:03, 0.00s elapsed
+Initiating NSE at 10:03
+Completed NSE at 10:03, 0.00s elapsed
+Initiating Ping Scan at 10:03
+Scanning 10.10.188.153 [2 ports]
+Completed Ping Scan at 10:03, 0.20s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 10:03
+Completed Parallel DNS resolution of 1 host. at 10:03, 0.15s elapsed
+Initiating Connect Scan at 10:03
+Scanning 10.10.188.153 [1000 ports]
+Discovered open port 22/tcp on 10.10.188.153
+Discovered open port 80/tcp on 10.10.188.153
+Increasing send delay for 10.10.188.153 from 0 to 5 due to 32 out of 106 dropped probes since last increase.
+Increasing send delay for 10.10.188.153 from 5 to 10 due to 11 out of 23 dropped probes since last increase.
+Increasing send delay for 10.10.188.153 from 10 to 20 due to max_successful_tryno increase to 4
+Increasing send delay for 10.10.188.153 from 20 to 40 due to 16 out of 53 dropped probes since last increase.
+Completed Connect Scan at 10:04, 49.07s elapsed (1000 total ports)
+Initiating Service scan at 10:04
+Scanning 2 services on 10.10.188.153
+Completed Service scan at 10:04, 6.43s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.188.153.
+Initiating NSE at 10:04
+Completed NSE at 10:04, 7.49s elapsed
+Initiating NSE at 10:04
+Completed NSE at 10:04, 1.03s elapsed
+Initiating NSE at 10:04
+Completed NSE at 10:04, 0.00s elapsed
+Nmap scan report for 10.10.188.153
+Host is up (0.21s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 74:e0:e1:b4:05:85:6a:15:68:7e:16:da:f2:c7:6b:ee (RSA)
+|   256 bd:43:62:b9:a1:86:51:36:f8:c7:df:f9:0f:63:8f:a3 (ECDSA)
+|_  256 f9:e7:da:07:8f:10:af:97:0b:32:87:c9:32:d7:1b:76 (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Smag
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 10:04
+Completed NSE at 10:04, 0.00s elapsed
+Initiating NSE at 10:04
+Completed NSE at 10:04, 0.00s elapsed
+Initiating NSE at 10:04
+Completed NSE at 10:04, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 65.12 seconds

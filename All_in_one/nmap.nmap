@@ -1,0 +1,76 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-08-28 14:12 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:12
+Completed NSE at 14:12, 0.00s elapsed
+Initiating NSE at 14:12
+Completed NSE at 14:12, 0.00s elapsed
+Initiating NSE at 14:12
+Completed NSE at 14:12, 0.00s elapsed
+Initiating Ping Scan at 14:12
+Scanning 10.10.239.49 [2 ports]
+Completed Ping Scan at 14:12, 0.34s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:12
+Completed Parallel DNS resolution of 1 host. at 14:12, 0.19s elapsed
+Initiating Connect Scan at 14:12
+Scanning 10.10.239.49 [1000 ports]
+Discovered open port 21/tcp on 10.10.239.49
+Discovered open port 22/tcp on 10.10.239.49
+Discovered open port 80/tcp on 10.10.239.49
+Increasing send delay for 10.10.239.49 from 0 to 5 due to 41 out of 135 dropped probes since last increase.
+Increasing send delay for 10.10.239.49 from 5 to 10 due to 11 out of 14 dropped probes since last increase.
+Increasing send delay for 10.10.239.49 from 10 to 20 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 10.10.239.49 from 20 to 40 due to max_successful_tryno increase to 4
+Completed Connect Scan at 14:13, 50.51s elapsed (1000 total ports)
+Initiating Service scan at 14:13
+Scanning 3 services on 10.10.239.49
+Completed Service scan at 14:13, 6.80s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.239.49.
+Initiating NSE at 14:13
+NSE: [ftp-bounce] PORT response: 500 Illegal PORT command.
+Completed NSE at 14:13, 7.53s elapsed
+Initiating NSE at 14:13
+Completed NSE at 14:13, 2.00s elapsed
+Initiating NSE at 14:13
+Completed NSE at 14:13, 0.00s elapsed
+Nmap scan report for 10.10.239.49
+Host is up (0.23s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.17.28.202
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e2:5c:33:22:76:5c:93:66:cd:96:9c:16:6a:b3:17:a4 (RSA)
+|   256 1b:6a:36:e1:8e:b4:96:5e:c6:ef:0d:91:37:58:59:b6 (ECDSA)
+|_  256 fb:fa:db:ea:4e:ed:20:2b:91:18:9d:58:a0:6a:50:ec (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:13
+Completed NSE at 14:13, 0.00s elapsed
+Initiating NSE at 14:13
+Completed NSE at 14:13, 0.00s elapsed
+Initiating NSE at 14:13
+Completed NSE at 14:13, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 68.33 seconds

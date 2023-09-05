@@ -1,0 +1,66 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-08-07 07:23 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 07:23
+Completed NSE at 07:23, 0.00s elapsed
+Initiating NSE at 07:23
+Completed NSE at 07:23, 0.00s elapsed
+Initiating NSE at 07:23
+Completed NSE at 07:23, 0.00s elapsed
+Initiating Ping Scan at 07:23
+Scanning 10.10.255.231 [2 ports]
+Completed Ping Scan at 07:23, 0.33s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 07:23
+Completed Parallel DNS resolution of 1 host. at 07:23, 0.20s elapsed
+Initiating Connect Scan at 07:23
+Scanning 10.10.255.231 [1000 ports]
+Discovered open port 22/tcp on 10.10.255.231
+Discovered open port 143/tcp on 10.10.255.231
+Discovered open port 80/tcp on 10.10.255.231
+Discovered open port 110/tcp on 10.10.255.231
+Increasing send delay for 10.10.255.231 from 0 to 5 due to max_successful_tryno increase to 4
+Increasing send delay for 10.10.255.231 from 5 to 10 due to max_successful_tryno increase to 5
+Increasing send delay for 10.10.255.231 from 10 to 20 due to max_successful_tryno increase to 6
+Completed Connect Scan at 07:24, 52.11s elapsed (1000 total ports)
+Initiating Service scan at 07:24
+Scanning 4 services on 10.10.255.231
+Completed Service scan at 07:24, 9.16s elapsed (4 services on 1 host)
+NSE: Script scanning 10.10.255.231.
+Initiating NSE at 07:24
+Completed NSE at 07:26, 69.38s elapsed
+Initiating NSE at 07:26
+Completed NSE at 07:26, 12.96s elapsed
+Initiating NSE at 07:26
+Completed NSE at 07:26, 0.00s elapsed
+Nmap scan report for 10.10.255.231
+Host is up (0.76s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 90:35:66:f4:c6:d2:95:12:1b:e8:cd:de:aa:4e:03:23 (RSA)
+|   256 53:9d:23:67:34:cf:0a:d5:5a:9a:11:74:bd:fd:de:71 (ECDSA)
+|_  256 a2:8f:db:ae:9e:3d:c9:e6:a9:ca:03:b1:d7:1b:66:83 (ED25519)
+80/tcp  open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Fowsniff Corp - Delivering Solutions
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+110/tcp open  pop3    Dovecot pop3d
+|_pop3-capabilities: AUTH-RESP-CODE UIDL USER SASL(PLAIN) RESP-CODES PIPELINING TOP CAPA
+143/tcp open  imap    Dovecot imapd
+|_imap-capabilities: more have ENABLE post-login listed IMAP4rev1 LITERAL+ SASL-IR Pre-login AUTH=PLAINA0001 OK capabilities ID IDLE LOGIN-REFERRALS
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 07:26
+Completed NSE at 07:26, 0.00s elapsed
+Initiating NSE at 07:26
+Completed NSE at 07:26, 0.00s elapsed
+Initiating NSE at 07:26
+Completed NSE at 07:26, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 145.10 seconds

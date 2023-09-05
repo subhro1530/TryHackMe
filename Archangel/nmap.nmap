@@ -1,0 +1,60 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-08-08 08:07 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 08:07
+Completed NSE at 08:07, 0.00s elapsed
+Initiating NSE at 08:07
+Completed NSE at 08:07, 0.00s elapsed
+Initiating NSE at 08:07
+Completed NSE at 08:07, 0.00s elapsed
+Initiating Ping Scan at 08:07
+Scanning 10.10.111.90 [2 ports]
+Completed Ping Scan at 08:07, 0.40s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 08:07
+Completed Parallel DNS resolution of 1 host. at 08:07, 0.19s elapsed
+Initiating Connect Scan at 08:07
+Scanning 10.10.111.90 [1000 ports]
+Discovered open port 22/tcp on 10.10.111.90
+Discovered open port 80/tcp on 10.10.111.90
+Increasing send delay for 10.10.111.90 from 0 to 5 due to 81 out of 269 dropped probes since last increase.
+Increasing send delay for 10.10.111.90 from 5 to 10 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 10.10.111.90 from 10 to 20 due to 11 out of 14 dropped probes since last increase.
+Increasing send delay for 10.10.111.90 from 20 to 40 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 10.10.111.90 from 40 to 80 due to max_successful_tryno increase to 4
+Completed Connect Scan at 08:08, 67.90s elapsed (1000 total ports)
+Initiating Service scan at 08:08
+Scanning 2 services on 10.10.111.90
+Completed Service scan at 08:08, 6.85s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.111.90.
+Initiating NSE at 08:08
+Completed NSE at 08:08, 6.88s elapsed
+Initiating NSE at 08:08
+Completed NSE at 08:08, 1.05s elapsed
+Initiating NSE at 08:08
+Completed NSE at 08:08, 0.00s elapsed
+Nmap scan report for 10.10.111.90
+Host is up (0.23s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 9f:1d:2c:9d:6c:a4:0e:46:40:50:6f:ed:cf:1c:f3:8c (RSA)
+|   256 63:73:27:c7:61:04:25:6a:08:70:7a:36:b2:f2:84:0d (ECDSA)
+|_  256 b6:4e:d2:9c:37:85:d6:76:53:e8:c4:e0:48:1c:ae:6c (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Wavefire
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 08:08
+Completed NSE at 08:08, 0.00s elapsed
+Initiating NSE at 08:08
+Completed NSE at 08:08, 0.00s elapsed
+Initiating NSE at 08:08
+Completed NSE at 08:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 84.05 seconds

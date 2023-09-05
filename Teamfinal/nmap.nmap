@@ -1,0 +1,85 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-08-22 14:16 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+Initiating Ping Scan at 14:16
+Scanning 10.10.229.9 [2 ports]
+Completed Ping Scan at 14:16, 0.28s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:16
+Completed Parallel DNS resolution of 1 host. at 14:16, 0.00s elapsed
+Initiating Connect Scan at 14:16
+Scanning 10.10.229.9 [1000 ports]
+Discovered open port 21/tcp on 10.10.229.9
+Discovered open port 22/tcp on 10.10.229.9
+Discovered open port 80/tcp on 10.10.229.9
+Stats: 0:00:18 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 37.55% done; ETC: 14:17 (0:00:30 remaining)
+Stats: 0:00:20 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 45.05% done; ETC: 14:16 (0:00:23 remaining)
+Stats: 0:00:20 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 46.30% done; ETC: 14:16 (0:00:23 remaining)
+Verbosity Increased to 2.
+Verbosity Increased to 3.
+Verbosity Increased to 4.
+Verbosity Increased to 5.
+Verbosity Increased to 6.
+Completed Connect Scan at 14:16, 32.00s elapsed (1000 total ports)
+Initiating Service scan at 14:16
+Scanning 3 services on 10.10.229.9
+Verbosity Increased to 7.
+Completed Service scan at 14:16, 6.59s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.229.9.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 14:16
+Verbosity Increased to 8.
+Verbosity Increased to 9.
+Verbosity Increased to 10.
+Verbosity Increased to 10.
+Verbosity Increased to 10.
+Verbosity Increased to 10.
+Completed NSE at 14:17, 13.52s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 14:17
+Completed NSE at 14:17, 3.60s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 14:17
+Completed NSE at 14:17, 0.00s elapsed
+Nmap scan report for 10.10.229.9
+Host is up (0.37s latency).
+Scanned at 2023-08-22 14:16:15 EDT for 56s
+Not shown: 997 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 79:5f:11:6a:85:c2:08:24:30:6c:d4:88:74:1b:79:4d (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDRK/xFh/H4lC7shWUUvK9lKxd3VO2OwfsC8LjFEU2CnEUrbVCnzx8jiVp5gO+CVAj63+GXkbIuXpynlQ/4j1dXdVUz/yAZ96cHiCNo6S5ThONoG2g2ObJSviCX2wBXhUJEzW07mRdtx4nesr6XWMj9hwIlSfSBS2iPEiqHfGrjp14NjG6Xmq5hxZh5Iq3dBrOd/ZZKjGsHe+RElAMzIwRK5NwFlE7zt7ZiANrFSy4YD4zerNSyEnjPdnE6/ArBmqOFtsWKZ2p/Wc0oLOP7d6YBwQyZ9yQNVGYS9gDIGZyQCYsMDVJf7jNvRp/3Ru53FMRcsYm5+ItIrgrx5GbpA+LR
+|   256 af:7e:3f:7e:b4:86:58:83:f1:f6:a2:54:a6:9b:ba:ad (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBM4d9TCz3FkEBEJ1VMjOsCrxsbS3YGb7mu9WgtnaFPZs2eG4ssCWz9nWeLolFgvHyT5WxRT0SFSv3vCZCtN86I=
+|   256 26:25:b0:7b:dc:3f:b2:94:37:12:5d:cd:06:98:c7:9f (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHUxjoul7JvmqQMtGOuadBwi2mBVCdXhJjoG5x+l+uQn
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works! If you see this add 'te...
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 14:17
+Completed NSE at 14:17, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 14:17
+Completed NSE at 14:17, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 14:17
+Completed NSE at 14:17, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 56.73 seconds

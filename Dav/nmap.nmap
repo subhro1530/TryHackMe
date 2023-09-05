@@ -1,0 +1,53 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-09-03 13:07 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 13:07
+Completed NSE at 13:07, 0.00s elapsed
+Initiating NSE at 13:07
+Completed NSE at 13:07, 0.00s elapsed
+Initiating NSE at 13:07
+Completed NSE at 13:07, 0.00s elapsed
+Initiating Ping Scan at 13:07
+Scanning 10.10.213.46 [2 ports]
+Completed Ping Scan at 13:07, 1.29s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 13:07
+Completed Parallel DNS resolution of 1 host. at 13:07, 0.08s elapsed
+Initiating Connect Scan at 13:07
+Scanning 10.10.213.46 [1000 ports]
+Connect Scan Timing: About 1.30% done; ETC: 13:56 (0:48:05 remaining)
+Connect Scan Timing: About 2.35% done; ETC: 13:59 (0:51:15 remaining)
+Discovered open port 80/tcp on 10.10.213.46
+Increasing send delay for 10.10.213.46 from 0 to 5 due to 11 out of 18 dropped probes since last increase.
+Completed Connect Scan at 13:09, 102.36s elapsed (1000 total ports)
+Initiating Service scan at 13:09
+Scanning 1 service on 10.10.213.46
+Completed Service scan at 13:09, 6.59s elapsed (1 service on 1 host)
+NSE: Script scanning 10.10.213.46.
+Initiating NSE at 13:09
+Completed NSE at 13:09, 5.88s elapsed
+Initiating NSE at 13:09
+Completed NSE at 13:09, 1.28s elapsed
+Initiating NSE at 13:09
+Completed NSE at 13:09, 0.00s elapsed
+Nmap scan report for 10.10.213.46
+Host is up (0.20s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE VERSION
+80/tcp   open     http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Apache2 Ubuntu Default Page: It works
+1248/tcp filtered hermes
+9503/tcp filtered unknown
+
+NSE: Script Post-scanning.
+Initiating NSE at 13:09
+Completed NSE at 13:09, 0.00s elapsed
+Initiating NSE at 13:09
+Completed NSE at 13:09, 0.00s elapsed
+Initiating NSE at 13:09
+Completed NSE at 13:09, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 118.31 seconds

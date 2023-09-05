@@ -1,0 +1,73 @@
+#   Tryhackme - Easy Peasy
+
+##  export IP=10.10.118.191
+
+##  Steps:
+1. nmap scan:
+```bash
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-08-03 13:52 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 13:52
+Completed NSE at 13:52, 0.00s elapsed
+Initiating NSE at 13:52
+Completed NSE at 13:52, 0.00s elapsed
+Initiating NSE at 13:52
+Completed NSE at 13:52, 0.00s elapsed
+Initiating Ping Scan at 13:52
+Scanning 10.10.118.191 [2 ports]
+Completed Ping Scan at 13:52, 0.20s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 13:52
+Completed Parallel DNS resolution of 1 host. at 13:52, 0.01s elapsed
+Initiating Connect Scan at 13:52
+Scanning 10.10.118.191 [1000 ports]
+Discovered open port 80/tcp on 10.10.118.191
+Increasing send delay for 10.10.118.191 from 0 to 5 due to 27 out of 89 dropped probes since last increase.
+Completed Connect Scan at 13:53, 27.55s elapsed (1000 total ports)
+Initiating Service scan at 13:53
+Scanning 1 service on 10.10.118.191
+Completed Service scan at 13:53, 6.52s elapsed (1 service on 1 host)
+NSE: Script scanning 10.10.118.191.
+Initiating NSE at 13:53
+Completed NSE at 13:53, 4.41s elapsed
+Initiating NSE at 13:53
+Completed NSE at 13:53, 1.23s elapsed
+Initiating NSE at 13:53
+Completed NSE at 13:53, 0.00s elapsed
+Nmap scan report for 10.10.118.191
+Host is up (0.20s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE         VERSION
+80/tcp    open     http            nginx 1.16.1
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.16.1
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Welcome to nginx!
+1087/tcp  filtered cplscrambler-in
+2301/tcp  filtered compaqdiag
+3367/tcp  filtered satvid-datalnk
+15000/tcp filtered hydap
+
+NSE: Script Post-scanning.
+Initiating NSE at 13:53
+Completed NSE at 13:53, 0.00s elapsed
+Initiating NSE at 13:53
+Completed NSE at 13:53, 0.00s elapsed
+Initiating NSE at 13:53
+Completed NSE at 13:53, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 40.44 seconds
+
+```
+
+2.  Dirbuster scan:
+``` Found
+hidden/whatever/
+```
+
+3.  Viewed the source code of whatever page. Found a b64 hash there 
+
+4.  
