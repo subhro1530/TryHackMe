@@ -1,0 +1,67 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-09-06 04:23 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 04:23
+Completed NSE at 04:23, 0.00s elapsed
+Initiating NSE at 04:23
+Completed NSE at 04:23, 0.00s elapsed
+Initiating NSE at 04:23
+Completed NSE at 04:23, 0.00s elapsed
+Initiating Ping Scan at 04:23
+Scanning 10.10.36.73 [2 ports]
+Completed Ping Scan at 04:23, 0.28s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 04:23
+Completed Parallel DNS resolution of 1 host. at 04:23, 0.19s elapsed
+Initiating Connect Scan at 04:23
+Scanning 10.10.36.73 [1000 ports]
+Discovered open port 80/tcp on 10.10.36.73
+Discovered open port 445/tcp on 10.10.36.73
+Discovered open port 22/tcp on 10.10.36.73
+Increasing send delay for 10.10.36.73 from 0 to 5 due to 33 out of 108 dropped probes since last increase.
+Increasing send delay for 10.10.36.73 from 5 to 10 due to 15 out of 48 dropped probes since last increase.
+Increasing send delay for 10.10.36.73 from 10 to 20 due to max_successful_tryno increase to 4
+Completed Connect Scan at 04:24, 40.97s elapsed (1000 total ports)
+Initiating Service scan at 04:24
+Scanning 3 services on 10.10.36.73
+Completed Service scan at 04:24, 17.09s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.36.73.
+Initiating NSE at 04:24
+Completed NSE at 04:24, 35.39s elapsed
+Initiating NSE at 04:24
+Completed NSE at 04:24, 1.30s elapsed
+Initiating NSE at 04:24
+Completed NSE at 04:24, 0.00s elapsed
+Nmap scan report for 10.10.36.73
+Host is up (0.21s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 a3:6a:9c:b1:12:60:b2:72:13:09:84:cc:38:73:44:4f (RSA)
+|   256 b9:3f:84:00:f4:d1:fd:c8:e7:8d:98:03:38:74:a1:4d (ECDSA)
+|_  256 d0:86:51:60:69:46:b2:e1:39:43:90:97:a6:af:96:93 (ED25519)
+80/tcp  open  http    Apache httpd 2.4.41 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+445/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+NSE: Script Post-scanning.
+Initiating NSE at 04:24
+Completed NSE at 04:24, 0.00s elapsed
+Initiating NSE at 04:24
+Completed NSE at 04:24, 0.00s elapsed
+Initiating NSE at 04:24
+Completed NSE at 04:24, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 95.98 seconds
